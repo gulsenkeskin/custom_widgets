@@ -8,6 +8,11 @@ class PopupDialogPage extends StatelessWidget {
     appBar: AppBar(
       title:const Text("Popup Dialog"),
     ),
-    body: SizedBox(),
+    body: Center(child: ElevatedButton(
+      child:const Text('Open Dialog'),
+      onPressed: (){
+
+      },
+    ),),
   );
 }
