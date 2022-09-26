@@ -1,4 +1,4 @@
-import 'package:custom_widgets/constants/route_list.dart';
+import 'package:custom_widgets/routes/route_list.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

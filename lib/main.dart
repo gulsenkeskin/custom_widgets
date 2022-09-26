@@ -1,4 +1,4 @@
-import 'package:custom_widgets/constants/routes.dart';
+import 'package:custom_widgets/routes/routes.dart';
 import 'package:custom_widgets/src/pages/home.dart';
 import 'package:flutter/material.dart';
 
