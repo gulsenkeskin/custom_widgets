@@ -9,6 +9,8 @@ class PageViewPage extends StatelessWidget {
           title: const Text("Expansion Tile Widget"),
         ),
         body: PageView(
+          //kaydırmayı önleme
+          // physics: const NeverScrollableScrollPhysics(),
           scrollDirection: Axis.vertical,
           onPageChanged: (index){
             print('Page ${index+1}');
