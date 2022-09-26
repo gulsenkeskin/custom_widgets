@@ -15,15 +15,20 @@ class _CheckBoxPageState extends State<CheckBoxPage> {
           title: const Text("Checkbox Widget"),
         ),
         body: Center(
-          child: Checkbox(
-            value: isChecked,
-            onChanged: (bool? value) {
-              setState(() {
-                isChecked = value!;
-              });
-            },
-            activeColor: Colors.green,
-            checkColor: Colors.white,
+          child: Theme(
+            data: Theme.of(context).copyWith(
+              unselectedWidgetColor: Colors.green
+            ),
+            child: Checkbox(
+              value: isChecked,
+              onChanged: (bool? value) {
+                setState(() {
+                  isChecked = value!;
+                });
+              },
+              activeColor: Colors.green,
+              checkColor: Colors.white,
+            ),
           ),
         ),
       );
