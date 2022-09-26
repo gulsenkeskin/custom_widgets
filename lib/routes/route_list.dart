@@ -8,5 +8,6 @@ List<Map<String, String>> routeList = [
   {"name": "Popup Dialog", "route": PageKeys.popupDialog},
   {"name": "Dropdown Menu", "route": PageKeys.dropdownMenu},
   {"name": "Page View", "route": PageKeys.pageView},
-  {"name": "Expansion Panel", "route": PageKeys.expansionPanel}
+  {"name": "Expansion Panel", "route": PageKeys.expansionPanel},
+  {"name": "Multiple Expansion Panel", "route": PageKeys.multipleExpansionPanel}
 ];

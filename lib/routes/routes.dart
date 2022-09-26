@@ -6,6 +6,7 @@ import 'package:custom_widgets/src/pages/dropdown_menu.dart';
 import 'package:custom_widgets/src/pages/expansion_panel.dart';
 import 'package:custom_widgets/src/pages/expansion_tile.dart';
 import 'package:custom_widgets/src/pages/home.dart';
+import 'package:custom_widgets/src/pages/multiple_expansion_panel.dart';
 import 'package:custom_widgets/src/pages/page_view.dart';
 import 'package:custom_widgets/src/pages/popup_dialog.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -19,4 +20,6 @@ Map<String, Widget Function(dynamic context)> routes = {
   PageKeys.dropdownMenu: (context) => const DropdownMenuPage(),
   PageKeys.pageView: (context) => const PageViewPage(),
   PageKeys.expansionPanel: (context) => const ExpansionPanelPage(),
+  PageKeys.multipleExpansionPanel:(context)=> const MultipleExpansionPanelPage(),
+
 };

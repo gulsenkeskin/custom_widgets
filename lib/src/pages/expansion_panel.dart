@@ -10,13 +10,7 @@ class ExpansionPanelPage extends StatefulWidget {
 }
 
 class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
-  final List<Item> items = [
-    Item(header: 'Panel 1', body: Constants.loremIpsum),
-    Item(header: 'Panel 2', body: Constants.loremIpsum),
-    Item(header: 'Panel 3', body: Constants.loremIpsum),
-    Item(header: 'Panel 4', body: Constants.loremIpsum),
-    Item(header: 'Panel 5', body: Constants.loremIpsum),
-  ];
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -24,7 +18,7 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
         ),
         body: SingleChildScrollView(
           child: ExpansionPanelList.radio(
-            children: items
+            children: itemList
                 .map((item) => ExpansionPanelRadio(
                     //header'a tıklayınca da panelin açılıp kapanabilmesi için
                     canTapOnHeader: true,
