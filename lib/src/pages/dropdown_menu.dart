@@ -8,13 +8,30 @@ class DropdownMenuPage extends StatefulWidget {
 }
 
 class _DropdownMenuPageState extends State<DropdownMenuPage> {
-
+  List<String> items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+  String? selectedItem = 'Select Item';
 
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           title: const Text("Expansion Tile Widget"),
         ),
-        body: SizedBox(),
+        body: Center(
+          child: DropdownButton<String>(
+            value: selectedItem,
+            items: items
+                .map((item) => DropdownMenuItem<String>(
+                    value: item,
+                    child: Text(
+                      item,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    )))
+                .toList(),
+            onChanged: (item) => setState(() {
+              selectedItem = item;
+            }),
+          ),
+        ),
       );
 }
