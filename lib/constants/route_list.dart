@@ -3,6 +3,7 @@ import 'package:custom_widgets/src/pages/checkbox.dart';
 import 'package:custom_widgets/src/pages/checkbox_list_tile.dart';
 import 'package:custom_widgets/src/pages/dropdown_menu.dart';
 import 'package:custom_widgets/src/pages/expansion_tile.dart';
+import 'package:custom_widgets/src/pages/page_view.dart';
 import 'package:custom_widgets/src/pages/popup_dialog.dart';
 
 List<Map<String, Object>> routeList=[
@@ -29,5 +30,9 @@ List<Map<String, Object>> routeList=[
   {
     "name":"Dropdown Menu",
     "route":const DropdownMenuPage()
+  },
+  {
+    "name":"Page View",
+    "route":const PageViewPage()
   }
 ];
