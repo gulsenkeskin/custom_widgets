@@ -5,14 +5,28 @@ class ExpansionTilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(
-      title:const Text("Expansion Tile Widget"),
-    ),
-    body: const ExpansionTile(
-      title: Text(
-        'Animals',
-        style: TextStyle(fontSize: 24, fontWeight:FontWeight.bold ),
-      ),
-    ),
-  );
+        appBar: AppBar(
+          title: const Text("Expansion Tile Widget"),
+        ),
+        body: ExpansionTile(
+          title: const Text(
+            'Animals',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          children: [
+            customListTile('Dog'),
+            customListTile('Cat'),
+            customListTile('Fish'),
+            customListTile('Bird'),
+          ],
+        ),
+      );
+
+  ListTile customListTile(String animal) => ListTile(
+        title: Text(
+          animal,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        onTap: () {},
+      );
 }
