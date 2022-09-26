@@ -9,7 +9,7 @@ class DropdownMenuPage extends StatefulWidget {
 
 class _DropdownMenuPageState extends State<DropdownMenuPage> {
   List<String> items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
-  String? selectedItem = 'Select Item';
+  String? selectedItem = 'Item 1';
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -25,7 +25,7 @@ class _DropdownMenuPageState extends State<DropdownMenuPage> {
                     child: Text(
                       item,
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                         const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                     )))
                 .toList(),
             onChanged: (item) => setState(() {
