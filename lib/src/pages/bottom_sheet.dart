@@ -15,12 +15,11 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
             child: const Text('Open Bottom Sheet'),
             onPressed: () {
               showModalBottomSheet(
+                  isScrollControlled: true,
                   context: context,
-                   shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(20)
-                    )
-                  ),
+                  shape: const RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.vertical(top: Radius.circular(20))),
                   builder: (context) => Center(
                         child: ElevatedButton(
                           child: const Text('Close'),
