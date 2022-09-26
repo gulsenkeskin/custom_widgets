@@ -1,4 +1,5 @@
 import 'package:custom_widgets/routes/pagekeys.dart';
+import 'package:custom_widgets/src/pages/animation_pages/confetti.dart';
 import 'package:custom_widgets/src/pages/appbar.dart';
 import 'package:custom_widgets/src/pages/bottom_sheet.dart';
 import 'package:custom_widgets/src/pages/checkbox.dart';
@@ -30,5 +31,6 @@ Map<String, Widget Function(dynamic context)> routes = {
   PageKeys.tabBar: (context) => const TabBarPage(),
   PageKeys.popupMenu: (context) => const PopupMenuPage(),
   PageKeys.itemPage: (context) => const ItemPage(),
+  PageKeys.confetti: (context) => const ConfettiPage(),
 
 };

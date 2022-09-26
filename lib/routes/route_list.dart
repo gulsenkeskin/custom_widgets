@@ -13,5 +13,6 @@ List<Map<String, String>> routeList = [
   {"name": "AppBar", "route": PageKeys.appBar},
   {"name": "TabBar", "route": PageKeys.tabBar},
   {"name": "Popup Menu", "route": PageKeys.popupMenu},
+  {"name": "Confetti  Animation", "route": PageKeys.confetti},
 
 ];

@@ -12,5 +12,6 @@ static const appBar='appBar';
 static const tabBar='tabBar';
 static const popupMenu='popupMenu';
 static const itemPage='itemPage';
+static const confetti='confetti';
 
 }
