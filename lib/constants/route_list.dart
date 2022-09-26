@@ -1,38 +1,33 @@
-import 'package:custom_widgets/src/pages/bottom_sheet.dart';
-import 'package:custom_widgets/src/pages/checkbox.dart';
-import 'package:custom_widgets/src/pages/checkbox_list_tile.dart';
-import 'package:custom_widgets/src/pages/dropdown_menu.dart';
-import 'package:custom_widgets/src/pages/expansion_tile.dart';
-import 'package:custom_widgets/src/pages/page_view.dart';
-import 'package:custom_widgets/src/pages/popup_dialog.dart';
+import 'package:custom_widgets/constants/pagekeys.dart';
 
-List<Map<String, Object>> routeList=[
+
+ List<Map<String, String>> routeList=[
   {
     "name":"Bottom Sheet",
-    "route":const BottomSheetPage()
+    "route":PageKeys.bottomSheet
   },
   {
     "name":"Expansion Tile",
-    "route":const ExpansionTilePage()
+    "route":PageKeys.expansionTile
   },
   {
     "name":"CheckBox",
-    "route":const CheckBoxPage()
+    "route":PageKeys.checkbox
   },
   {
     "name":"CheckBox List Tile",
-    "route":const CheckBoxListTilePage()
+    "route":PageKeys.checkboxListTile
   },
   {
     "name":"Popup Dialog",
-    "route":const PopupDialogPage()
+    "route":PageKeys.popupDialog
   },
   {
     "name":"Dropdown Menu",
-    "route":const DropdownMenuPage()
+    "route":PageKeys.dropdownMenu
   },
   {
     "name":"Page View",
-    "route":const PageViewPage()
+    "route":PageKeys.pageView
   }
 ];

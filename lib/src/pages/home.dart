@@ -14,12 +14,12 @@ class HomePage extends StatelessWidget {
           itemCount: routeList.length,
           itemBuilder: (context, index) {
             final name = routeList[index]["name"] as String;
-            final route = routeList[index]["route"] as Widget;
+            final route = routeList[index]["route"] as String;
 
             return ListTile(
               title: customCard(index, name),
               onTap: () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => route)),
+                  .pushNamed(route),
             );
           }),
     );

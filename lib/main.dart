@@ -1,3 +1,4 @@
+import 'package:custom_widgets/constants/routes.dart';
 import 'package:custom_widgets/src/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const HomePage(),
+      home:const HomePage(),
+      routes: routes,
     );
   }
 }
