@@ -9,7 +9,7 @@ class PageViewPage extends StatefulWidget {
 
 class _PageViewPageState extends State<PageViewPage> {
   final controller = PageController(initialPage: 1);
-  
+
   @override
   void dispose() {
     controller.dispose();
@@ -19,13 +19,25 @@ class _PageViewPageState extends State<PageViewPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: const Text("Expansion Tile Widget"),
+          title: const Text("Page View"),
+          actions: [
+            IconButton(
+                onPressed: () => controller.previousPage(
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.easeInOut),
+                icon: const Icon(Icons.keyboard_arrow_left)),
+            IconButton(
+                onPressed: () => controller.nextPage(
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.easeInOut),
+                icon: const Icon(Icons.keyboard_arrow_right))
+          ],
         ),
         body: PageView(
           //kaydırmayı önleme
-          // physics: const NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           controller: controller,
-          scrollDirection: Axis.vertical,
+          //scrollDirection: Axis.vertical,
           onPageChanged: (index) {
             print('Page ${index + 1}');
           },
