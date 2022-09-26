@@ -26,15 +26,19 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
           child: ExpansionPanelList.radio(
             children: items
                 .map((item) => ExpansionPanelRadio(
-                    headerBuilder: (context, isExpanded) =>ListTile(
-                      title: Text(
-                        item.header,
-                        style:const TextStyle(fontSize: 20),
-                      ),
+                    //header'a tıklayınca da panelin açılıp kapanabilmesi için
+                    canTapOnHeader: true,
+                    headerBuilder: (context, isExpanded) => ListTile(
+                          title: Text(
+                            item.header,
+                            style: const TextStyle(fontSize: 20),
+                          ),
+                        ),
+                    body: ListTile(
+                      title: Text(item.body, style: TextStyle(fontSize: 12)),
                     ),
-                    body: ListTile(title: Text(item.body,style:TextStyle(fontSize: 12)),),
                     value: item.header //todo: UNIQUE OLMALI!
-            ))
+                    ))
                 .toList(),
           ),
         ),
