@@ -20,6 +20,7 @@ class _CheckBoxListTilePageState extends State<CheckBoxListTilePage> {
             unselectedWidgetColor: Colors.green
         ),
         child: CheckboxListTile(
+          controlAffinity: ListTileControlAffinity.leading,
           title:const Text('CheckBox'),
           subtitle: const Text('Subtitle'),
           value: isChecked,
