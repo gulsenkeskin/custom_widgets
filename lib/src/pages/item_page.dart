@@ -5,14 +5,13 @@ class ItemPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Object? args = ModalRoute.of(context)!.settings.arguments;
-    String title = (args as Map<String, dynamic>)["title"];
+    String? title = ModalRoute.of(context)!.settings.arguments as String;
 
     return Scaffold(
       appBar: AppBar(
-        title:const Text(title),
+        title: Text(title),
       ),
-      body: SizedBox(),
+      body: const SizedBox(),
     );
   }
 }

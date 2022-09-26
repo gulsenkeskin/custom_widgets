@@ -17,20 +17,20 @@ class PopupMenuPage extends StatelessWidget {
                   if (value == MenuItem.item1) {
                     //item 1 e tıklanırsa
                     Navigator.of(context).pushNamed(PageKeys.itemPage,
-                        arguments: MenuItem.item1);
+                        arguments:"Page 1");
                   } else if (value == MenuItem.item2) {
                     //item 2 ye tıklanırsa
                     Navigator.of(context).pushNamed
                       (PageKeys.itemPage,
-                        arguments: MenuItem.item2);
+                        arguments: 'Page 2');
                   } else if (value == MenuItem.item3) {
                     //item 3 e tıklanırsa
                     Navigator.of(context).pushNamed(PageKeys.itemPage,
-                        arguments: MenuItem.item3);
+                        arguments: 'Page 3');
                   } else if (value == MenuItem.item4) {
                     //item 4 e tıklanırsa
                     Navigator.of(context).pushNamed(PageKeys.itemPage,
-                        arguments: MenuItem.item4);
+                        arguments: 'Page 4');
                   }
                 },
                 itemBuilder: (context) => [
