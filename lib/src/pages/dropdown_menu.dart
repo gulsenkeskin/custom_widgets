@@ -17,21 +17,34 @@ class _DropdownMenuPageState extends State<DropdownMenuPage> {
           title: const Text("Expansion Tile Widget"),
         ),
         body: Center(
-          child: DropdownButton<String>(
-            value: selectedItem,
-            items: items
-                .map((item) => DropdownMenuItem<String>(
-                    value: item,
-                    child: Text(
-                      item,
-                      style:
-                         const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                    )))
-                .toList(),
-            onChanged: (item) => setState(() {
-              selectedItem = item;
-            }),
+          child: SizedBox(
+            width: 240,
+            child: DropdownButtonFormField<String>(
+              decoration: InputDecoration(
+                  border: border(color: Colors.black26),
+                  enabledBorder: border()),
+              value: selectedItem,
+              items: items
+                  .map((item) => DropdownMenuItem<String>(
+                      value: item,
+                      child: Text(
+                        item,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 14),
+                      )))
+                  .toList(),
+              onChanged: (item) => setState(() {
+                selectedItem = item;
+              }),
+            ),
           ),
         ),
       );
+
+  OutlineInputBorder border({Color? color}) {
+    return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: BorderSide(width: 3, color: color ?? Colors.blue),
+    );
+  }
 }
