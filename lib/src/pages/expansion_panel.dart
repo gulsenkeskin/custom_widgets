@@ -11,7 +11,11 @@ class ExpansionPanelPage extends StatefulWidget {
 
 class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
   final List<Item> items = [
-    Item(header: 'Panel 1', body: Constants.loremIpsum)
+    Item(header: 'Panel 1', body: Constants.loremIpsum),
+    Item(header: 'Panel 2', body: Constants.loremIpsum),
+    Item(header: 'Panel 3', body: Constants.loremIpsum),
+    Item(header: 'Panel 4', body: Constants.loremIpsum),
+    Item(header: 'Panel 5', body: Constants.loremIpsum),
   ];
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -29,7 +33,8 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
                       ),
                     ),
                     body: ListTile(title: Text(item.body,style:TextStyle(fontSize: 12)),),
-                    value: item.header))
+                    value: item.header //todo: UNIQUE OLMALI!
+            ))
                 .toList(),
           ),
         ),
