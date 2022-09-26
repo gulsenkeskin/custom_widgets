@@ -1,4 +1,5 @@
 import 'package:custom_widgets/routes/pagekeys.dart';
+import 'package:custom_widgets/src/pages/appbar.dart';
 import 'package:custom_widgets/src/pages/bottom_sheet.dart';
 import 'package:custom_widgets/src/pages/checkbox.dart';
 import 'package:custom_widgets/src/pages/checkbox_list_tile.dart';
@@ -21,5 +22,5 @@ Map<String, Widget Function(dynamic context)> routes = {
   PageKeys.pageView: (context) => const PageViewPage(),
   PageKeys.expansionPanel: (context) => const ExpansionPanelPage(),
   PageKeys.multipleExpansionPanel:(context)=> const MultipleExpansionPanelPage(),
-
+  PageKeys.appBar:(context)=> const AppBarPage(),
 };

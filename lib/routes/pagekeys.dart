@@ -8,5 +8,5 @@ static const dropdownMenu = 'dropdownMenu';
 static const pageView = 'pageView';
 static const expansionPanel = 'expansionPanel';
 static const multipleExpansionPanel = 'multipleExpansionPanel';
-
+static const appBar='appBar';
 }
