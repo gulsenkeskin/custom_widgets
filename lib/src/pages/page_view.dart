@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
-class PageViewPage extends StatelessWidget {
+class PageViewPage extends StatefulWidget {
   const PageViewPage({Key? key}) : super(key: key);
+
+  @override
+  State<PageViewPage> createState() => _PageViewPageState();
+}
+
+class _PageViewPageState extends State<PageViewPage> {
+  final controller = PageController(initialPage: 1);
+  
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -11,9 +24,10 @@ class PageViewPage extends StatelessWidget {
         body: PageView(
           //kaydırmayı önleme
           // physics: const NeverScrollableScrollPhysics(),
+          controller: controller,
           scrollDirection: Axis.vertical,
-          onPageChanged: (index){
-            print('Page ${index+1}');
+          onPageChanged: (index) {
+            print('Page ${index + 1}');
           },
           children: [
             customContainer(Colors.red, "Page 1"),
