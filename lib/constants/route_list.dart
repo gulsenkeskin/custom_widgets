@@ -1,4 +1,5 @@
 import 'package:custom_widgets/src/pages/bottom_sheet.dart';
+import 'package:custom_widgets/src/pages/checkbox.dart';
 import 'package:custom_widgets/src/pages/expansion_tile.dart';
 
 List<Map<String, Object>> routeList=[
@@ -9,5 +10,9 @@ List<Map<String, Object>> routeList=[
   {
     "name":"Expansion Tile",
     "route":const ExpansionTilePage()
+  },
+  {
+    "name":"Expansion Tile",
+    "route":const CheckBoxPage()
   }
 ];
