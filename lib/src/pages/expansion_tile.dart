@@ -8,6 +8,11 @@ class ExpansionTilePage extends StatelessWidget {
     appBar: AppBar(
       title:const Text("Expansion Tile Widget"),
     ),
-    body: SizedBox(),
+    body: const ExpansionTile(
+      title: Text(
+        'Animals',
+        style: TextStyle(fontSize: 24, fontWeight:FontWeight.bold ),
+      ),
+    ),
   );
 }
