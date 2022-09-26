@@ -19,6 +19,10 @@ class ExpansionTilePage extends StatelessWidget {
             customListTile('Fish'),
             customListTile('Bird'),
           ],
+          onExpansionChanged: (isExpanded){
+            //açınca true kapatınca false döner
+            print('Expanded: $isExpanded');
+          },
         ),
       );
 
