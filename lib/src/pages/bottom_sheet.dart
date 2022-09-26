@@ -12,8 +12,15 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
   Widget build(BuildContext context)=> Scaffold(
     body: Center(
       child: ElevatedButton(
-        child: Text('Open Bottom Sheet'),
-        onPressed: (){},
+        child:const Text('Open Bottom Sheet'),
+        onPressed: (){
+          showModalBottomSheet(context: context, builder: (context)=>Center(
+            child: ElevatedButton(
+              child:const Text('Close'),
+              onPressed: ()=>Navigator.pop(context),
+            ),
+          ));
+        },
       ),
     ),
   );
