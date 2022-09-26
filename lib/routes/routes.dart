@@ -10,6 +10,7 @@ import 'package:custom_widgets/src/pages/home.dart';
 import 'package:custom_widgets/src/pages/multiple_expansion_panel.dart';
 import 'package:custom_widgets/src/pages/page_view.dart';
 import 'package:custom_widgets/src/pages/popup_dialog.dart';
+import 'package:custom_widgets/src/pages/popup_menu.dart';
 import 'package:custom_widgets/src/pages/tabbar.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -26,4 +27,6 @@ Map<String, Widget Function(dynamic context)> routes = {
       const MultipleExpansionPanelPage(),
   PageKeys.appBar: (context) => const AppBarPage(),
   PageKeys.tabBar: (context) => const TabBarPage(),
+  PageKeys.popupMenu: (context) => const PopupMenuPage(),
+
 };

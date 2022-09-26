@@ -12,4 +12,6 @@ List<Map<String, String>> routeList = [
   {"name": "Multiple Expansion Panel", "route": PageKeys.multipleExpansionPanel},
   {"name": "AppBar", "route": PageKeys.appBar},
   {"name": "TabBar", "route": PageKeys.tabBar},
+  {"name": "Popup Menu", "route": PageKeys.popupMenu},
+
 ];

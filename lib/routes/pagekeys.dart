@@ -10,4 +10,5 @@ static const expansionPanel = 'expansionPanel';
 static const multipleExpansionPanel = 'multipleExpansionPanel';
 static const appBar='appBar';
 static const tabBar='tabBar';
+static const popupMenu='popupMenu';
 }
