@@ -20,12 +20,17 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                   shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.vertical(top: Radius.circular(20))),
-                  builder: (context) => Center(
-                        child: ElevatedButton(
-                          child: const Text('Close'),
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                      ));
+                  builder: (context) => Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Center(
+                            child: ElevatedButton(
+                              child: const Text('Close'),
+                              onPressed: () => Navigator.pop(context),
+                            ),
+                          ),
+                    ],
+                  ));
             },
           ),
         ),
