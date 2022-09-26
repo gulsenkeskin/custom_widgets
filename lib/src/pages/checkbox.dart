@@ -22,6 +22,8 @@ class _CheckBoxPageState extends State<CheckBoxPage> {
                 isChecked = value!;
               });
             },
+            activeColor: Colors.green,
+            checkColor: Colors.white,
           ),
         ),
       );

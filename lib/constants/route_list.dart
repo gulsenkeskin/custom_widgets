@@ -12,7 +12,7 @@ List<Map<String, Object>> routeList=[
     "route":const ExpansionTilePage()
   },
   {
-    "name":"Expansion Tile",
+    "name":"CheckBox",
     "route":const CheckBoxPage()
   }
 ];
