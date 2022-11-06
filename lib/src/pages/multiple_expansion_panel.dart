@@ -1,5 +1,4 @@
 import 'package:custom_widgets/constants/constants.dart';
-import 'package:custom_widgets/models/item.dart';
 import 'package:flutter/material.dart';
 
 class MultipleExpansionPanelPage extends StatefulWidget {
@@ -35,7 +34,7 @@ class _MultipleExpansionPanelPageState
                           ),
                         ),
                     body: ListTile(
-                      title: Text(item.body, style: TextStyle(fontSize: 12)),
+                      title: Text(item.body, style: const TextStyle(fontSize: 12)),
                     ),
                     isExpanded: item.isExpanded))
                 .toList(),

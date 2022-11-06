@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ExpansionTilePage extends StatelessWidget {
@@ -21,7 +22,9 @@ class ExpansionTilePage extends StatelessWidget {
           ],
           onExpansionChanged: (isExpanded){
             //açınca true kapatınca false döner
-            print('Expanded: $isExpanded');
+            if (kDebugMode) {
+              print('Expanded: $isExpanded');
+            }
           },
         ),
       );

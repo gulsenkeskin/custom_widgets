@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class PageViewPage extends StatefulWidget {
@@ -39,7 +40,9 @@ class _PageViewPageState extends State<PageViewPage> {
           controller: controller,
           //scrollDirection: Axis.vertical,
           onPageChanged: (index) {
-            print('Page ${index + 1}');
+            if (kDebugMode) {
+              print('Page ${index + 1}');
+            }
           },
           children: [
             customContainer(Colors.red, "Page 1"),

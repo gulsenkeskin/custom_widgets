@@ -1,5 +1,4 @@
 import 'package:custom_widgets/routes/pagekeys.dart';
-import 'package:custom_widgets/src/pages/item_page.dart';
 import 'package:flutter/material.dart';
 
 enum MenuItem { item1, item2, item3, item4 }
@@ -45,6 +44,6 @@ class PopupMenuPage extends StatelessWidget {
                     ])
           ],
         ),
-        body: SizedBox(),
+        body: const SizedBox(),
       );
 }

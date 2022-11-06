@@ -1,5 +1,4 @@
 import 'package:custom_widgets/constants/constants.dart';
-import 'package:custom_widgets/models/item.dart';
 import 'package:flutter/material.dart';
 
 class ExpansionPanelPage extends StatefulWidget {
@@ -29,7 +28,7 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
                           ),
                         ),
                     body: ListTile(
-                      title: Text(item.body, style: TextStyle(fontSize: 12)),
+                      title: Text(item.body, style: const TextStyle(fontSize: 12)),
                     ),
                     value: item.header //todo: UNIQUE OLMALI!
                     ))
