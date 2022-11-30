@@ -1,5 +1,6 @@
 import 'package:custom_widgets/routes/pagekeys.dart';
 import 'package:custom_widgets/src/pages/animation_pages/confetti.dart';
+import 'package:custom_widgets/src/pages/animation_pages/liquid_text_view.dart';
 import 'package:custom_widgets/src/pages/appbar.dart';
 import 'package:custom_widgets/src/pages/bottom_sheet.dart';
 import 'package:custom_widgets/src/pages/checkbox.dart';
@@ -33,5 +34,5 @@ Map<String, Widget Function(dynamic context)> routes = {
   PageKeys.itemPage: (context) => const ItemPage(),
   PageKeys.confetti: (context) => const ConfettiPage(),
   PageKeys.frostedGlassLook: (context) => const FrostedGlassLook(),
-
+  PageKeys.liquidTextView: (context) => const LiquidTextView(),
 };
